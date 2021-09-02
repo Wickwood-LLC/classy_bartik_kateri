@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Bartik theme.
+
+classy_bartik_kateri.settings:
+  type: theme_settings
+  label: 'Classy Bartik Kateri settings'

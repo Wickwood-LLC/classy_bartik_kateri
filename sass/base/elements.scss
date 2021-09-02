@@ -1,0 +1,207 @@
+/**
+ * @file
+ * Overall specifications for Bartik.
+ */
+ @import "mixins";
+ @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  word-wrap: break-word;
+  font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+.link {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  &:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+  &:active {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+  &:focus {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+}
+h1, .heading-a {
+  margin: 1em 0 0.5em;
+  clear: both;
+  color: #000;
+  font-weight: bold;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 980px, 24px, 32px);
+
+  a {
+    border-bottom: none;
+  }
+}
+h2, .heading-b {
+  clear: both;
+  margin: 1em 0 0.5em;
+  font-size: 1.143em;
+  font-weight: bold;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 980px, 18px, 24px);
+
+  a {
+    border-bottom: none;
+  }
+}
+h3, .heading-c {
+  clear: both;
+  margin: 1em 0 0.5em;
+  font-size: 1.092em;
+  font-weight: bold;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 980px, 16px, 18px);
+}
+h4, .heading-d {
+  clear: both;
+  margin: 1em 0 0.5em;
+  font-size: 1.05em;
+  font-weight: bold;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 980px, 14px, 16px);
+}
+h5, .heading-e {
+  clear: both;
+  margin: 1em 0 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.889em;
+  font-weight: bold;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 980px, 14px, 16px);
+}
+h6, .heading-f {
+  clear: both;
+  margin: 1em 0 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 1200px, 12px, 14px);
+}
+p {
+  margin: 0 0 1.2em;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 1200px, 12px, 16px);
+}
+del {
+  text-decoration: line-through;
+}
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  border-left: 1px solid #bbb;
+  background: #f7f7f7;
+  font-style: italic;
+  &:before {
+    margin-right: 0.2em;
+    content: "\201C";
+    vertical-align: -0.4em;
+    color: #bbb;
+    font-size: 3em;
+    line-height: 0.1em;
+  }
+  &:after {
+    content: "\201D";
+    vertical-align: -0.45em;
+    color: #bbb;
+    font-size: 3em;
+    line-height: 0.1em;
+  }
+  > p:first-child {
+    display: inline;
+  }
+}
+[dir="rtl"] {
+  blockquote {
+    border-right: 1px solid #bbb;
+    border-left: none;
+    &:before {
+      margin-right: 0;
+      margin-left: 0.2em;
+      content: "\201D";
+    }
+    &:after {
+      content: "\201C";
+    }
+  }
+  ul {
+    padding: 0 1em 0.25em 0;
+    ul {
+      padding: 0 1em 0.25em 0;
+    }
+  }
+  ol {
+    padding: 0 1em 0.25em 0;
+    ol {
+      padding: 0 1em 0.25em 0;
+    }
+  }
+}
+.feed-icon {
+  display: block;
+  margin: 25px 0 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+
+  main#content & {
+    border: 1px solid #785fa0;
+  }
+}
+main#content .align-left {
+  margin-right: 1em;
+}
+main#content .align-right {
+  margin-left: 1em;
+}
+ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+  ul {
+    margin: 0;
+    padding: 0 0 0.25em 1em;
+  }
+}
+ol {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+  ol {
+    margin: 0;
+    padding: 0 0 0.25em 1em;
+  }
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 1em;
+}
+
+.fluid-columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  
+  > * {
+    flex: 0 1 220px;
+  }
+}
+
+.align-center {
+  text-align: center;
+}

@@ -1,0 +1,307 @@
+/**
+ * @file
+ * Footer Styling.
+ */
+
+.site-footer {
+  padding: 35px 0 30px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
+  .layout-container {
+    padding: 0 15px;
+  }
+
+  h2 {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  blockquote {
+    color: #555;
+  }
+
+  .content {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.857em;
+
+    a {
+      color: rgba(255, 255, 255, 0.8);
+
+      &.is-active {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.95);
+      }
+
+      &:focus {
+        color: rgba(255, 255, 255, 0.95);
+      }
+    }
+
+    ol:not(.menu) {
+      padding-left: 1.4em;
+    }
+
+    ul:not(.menu) {
+      padding-left: 1.4em;
+    }
+  }
+
+  .menu-item {
+    padding: 0;
+  }
+
+  .block {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #444;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  table {
+    font-size: 1em;
+  }
+
+  tr {
+    td {
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    th {
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    &.odd {
+      background-color: transparent;
+    }
+
+    &.even {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+@media all and(min-width: 560px) {
+  .site-footer__top .region {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+
+  [dir="rtl"] .site-footer__top .region {
+    float: right;
+  }
+}
+
+@media all and(min-width: 560px) and(max-width: 850px) {
+  .region-footer-third {
+    clear: both;
+  }
+
+  .site-footer .region {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+
+  .site-footer__top .region {
+    &:nth-child(2n) {
+      padding-left: 10px;
+    }
+
+    &:nth-child(2n + 1) {
+      padding-right: 10px;
+    }
+  }
+
+  [dir="rtl"] .site-footer__top .region {
+    &:nth-child(2n) {
+      padding-right: 10px;
+      padding-left: 0;
+    }
+
+    &:nth-child(2n + 1) {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media all and(min-width: 851px) {
+  .site-footer__top .region {
+    width: 24%;
+    padding: 0 0.65%;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  [dir="rtl"] .site-footer__top .region {
+    &:first-child {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+      padding-left: 0;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .site-footer .content {
+    ol:not(.menu) {
+      padding-right: 1.4em;
+      padding-left: 0;
+    }
+
+    ul:not(.menu) {
+      padding-right: 1.4em;
+      padding-left: 0;
+    }
+  }
+
+  .site-footer__top .content {
+    .menu {
+      padding-right: 0;
+    }
+
+    li a {
+      padding: 0.8em 20px 0.8em 2px;
+    }
+  }
+
+  /**
+   * When the item is both first and last, :last-child overrides the right padding
+   * when using [dir="rtl"]. We need this rule to remove the right padding.
+   */
+  .site-footer__bottom .menu-item {
+    a {
+      float: right;
+      border-right: none;
+      border-left: 1px solid #555;
+    }
+
+    &:first-child {
+      a {
+        padding-right: 0;
+        padding-left: 12px;
+      }
+
+      &:last-child a {
+        padding-right: 0;
+      }
+    }
+
+    &:last-child a {
+      padding-right: 12px;
+      padding-left: 0;
+      border-left: none;
+    }
+  }
+}
+
+.site-footer__top {
+  h2 {
+    margin-bottom: 0;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid #555;
+    font-size: 1em;
+  }
+
+  .content {
+    margin-top: 0;
+
+    .menu {
+      padding-left: 0;
+    }
+
+    li a {
+      display: block;
+      padding: 0.8em 2px 0.8em 20px;
+      text-indent: -15px;
+      border-color: rgba(255, 255, 255, 0.15);
+      border-bottom: 1px solid #555;
+      line-height: 1.2;
+
+      &:hover {
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      &:focus {
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+    }
+  }
+
+  p {
+    margin-top: 1em;
+  }
+
+  .block-menu {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+.site-footer__bottom {
+  margin-top: 30px;
+  letter-spacing: 0.2px;
+  border-top: 1px solid #555;
+  border-color: rgba(255, 255, 255, 0.15);
+
+  .block {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin: 0.5em 0;
+    clear: both;
+
+    h2 {
+      margin: 0;
+    }
+
+    .menu {
+      padding: 0;
+    }
+  }
+
+  .content {
+    margin-top: 0;
+    padding: 0.5em 0;
+  }
+
+  .region {
+    margin-top: 20px;
+  }
+
+  .menu-item {
+    a {
+      display: block;
+      float: left;
+      padding: 0 12px;
+      border-color: rgba(255, 255, 255, 0.15);
+      border-right: 1px solid #555;
+    }
+
+    &:first-child a {
+      padding-left: 0;
+    }
+
+    &:last-child a {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+}

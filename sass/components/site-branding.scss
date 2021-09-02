@@ -1,0 +1,51 @@
+/**
+ * @file
+ * Visual styles for the site branding block in Bartik.
+ */
+ @import "../base/_mixins.scss";
+ @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+.site-branding {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(418px) {
+    flex-flow: row nowrap;
+  }
+}
+.site-branding__logo {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 0.286em;
+  border-bottom: 0;
+}
+.site-branding__text {
+  display: inline-block;
+  text-align: center;
+  @include breakpoint(418px) {
+    text-align: initial;
+  }
+}
+.site-branding__name {
+  color: #686868;
+  line-height: 1;
+  font-variant: small-caps;
+  font-style: italic;
+  font-weight: bold;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(740px, 1200px, 24px, 38px);
+}
+.site-branding__slogan {
+  margin-top: 7px;
+  word-spacing: 0.1em;
+  font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+  font-style: italic;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(740px, 1200px, 14px, 24px);
+}
+[dir="rtl"] .site-branding__logo {
+  margin-right: 0;
+  margin-left: 1em;
+}

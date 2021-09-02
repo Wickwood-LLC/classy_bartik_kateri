@@ -1,0 +1,5 @@
+main#content .no-image-borders img,
+main#content .caption img {
+  border: 0;
+}
+/*# sourceMappingURL=media.css.map */

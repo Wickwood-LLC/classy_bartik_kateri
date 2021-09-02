@@ -1,0 +1,87 @@
+/**
+ * @file
+ * Visual styles for the site branding block in Bartik.
+ */
+.site-branding {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 418px) {
+  .site-branding {
+    flex-flow: row nowrap;
+  }
+}
+
+.site-branding__logo {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 0.286em;
+  border-bottom: 0;
+}
+
+.site-branding__text {
+  display: inline-block;
+  text-align: center;
+}
+
+@media (min-width: 418px) {
+  .site-branding__text {
+    text-align: initial;
+  }
+}
+
+.site-branding__name {
+  color: #686868;
+  line-height: 1;
+  font-variant: small-caps;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.site-branding__name {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 740px) {
+  .site-branding__name {
+    font-size: calc(24px + 14 * ((100vw - 740px) / 460));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-branding__name {
+    font-size: 38px;
+  }
+}
+
+.site-branding__slogan {
+  margin-top: 7px;
+  word-spacing: 0.1em;
+  font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+  font-style: italic;
+}
+
+.site-branding__slogan {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 740px) {
+  .site-branding__slogan {
+    font-size: calc(14px + 10 * ((100vw - 740px) / 460));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-branding__slogan {
+    font-size: 24px;
+  }
+}
+
+[dir="rtl"] .site-branding__logo {
+  margin-right: 0;
+  margin-left: 1em;
+}
+/*# sourceMappingURL=site-branding.css.map */

@@ -1,0 +1,336 @@
+/**
+ * @file
+ * Overall specifications for Bartik.
+ */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  word-wrap: break-word;
+  font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.link:hover {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.link:active {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+.link:focus {
+  text-decoration: none;
+  border-bottom-style: solid;
+}
+
+h1, .heading-a {
+  margin: 1em 0 0.5em;
+  clear: both;
+  color: #000;
+  font-weight: bold;
+}
+
+h1, .heading-a {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 320px) {
+  h1, .heading-a {
+    font-size: calc(24px + 8 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h1, .heading-a {
+    font-size: 32px;
+  }
+}
+
+h1 a, .heading-a a {
+  border-bottom: none;
+}
+
+h2, .heading-b {
+  clear: both;
+  margin: 1em 0 0.5em;
+  font-size: 1.143em;
+  font-weight: bold;
+}
+
+h2, .heading-b {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  h2, .heading-b {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h2, .heading-b {
+    font-size: 24px;
+  }
+}
+
+h2 a, .heading-b a {
+  border-bottom: none;
+}
+
+h3, .heading-c {
+  clear: both;
+  margin: 1em 0 0.5em;
+  font-size: 1.092em;
+  font-weight: bold;
+}
+
+h3, .heading-c {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  h3, .heading-c {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h3, .heading-c {
+    font-size: 18px;
+  }
+}
+
+h4, .heading-d {
+  clear: both;
+  margin: 1em 0 0.5em;
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+h4, .heading-d {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  h4, .heading-d {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h4, .heading-d {
+    font-size: 16px;
+  }
+}
+
+h5, .heading-e {
+  clear: both;
+  margin: 1em 0 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.889em;
+  font-weight: bold;
+}
+
+h5, .heading-e {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  h5, .heading-e {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h5, .heading-e {
+    font-size: 16px;
+  }
+}
+
+h6, .heading-f {
+  clear: both;
+  margin: 1em 0 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h6, .heading-f {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  h6, .heading-f {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h6, .heading-f {
+    font-size: 14px;
+  }
+}
+
+p {
+  margin: 0 0 1.2em;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  p {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+del {
+  text-decoration: line-through;
+}
+
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  border-left: 1px solid #bbb;
+  background: #f7f7f7;
+  font-style: italic;
+}
+
+blockquote:before {
+  margin-right: 0.2em;
+  content: "\201C";
+  vertical-align: -0.4em;
+  color: #bbb;
+  font-size: 3em;
+  line-height: 0.1em;
+}
+
+blockquote:after {
+  content: "\201D";
+  vertical-align: -0.45em;
+  color: #bbb;
+  font-size: 3em;
+  line-height: 0.1em;
+}
+
+blockquote > p:first-child {
+  display: inline;
+}
+
+[dir="rtl"] blockquote {
+  border-right: 1px solid #bbb;
+  border-left: none;
+}
+
+[dir="rtl"] blockquote:before {
+  margin-right: 0;
+  margin-left: 0.2em;
+  content: "\201D";
+}
+
+[dir="rtl"] blockquote:after {
+  content: "\201C";
+}
+
+[dir="rtl"] ul {
+  padding: 0 1em 0.25em 0;
+}
+
+[dir="rtl"] ul ul {
+  padding: 0 1em 0.25em 0;
+}
+
+[dir="rtl"] ol {
+  padding: 0 1em 0.25em 0;
+}
+
+[dir="rtl"] ol ol {
+  padding: 0 1em 0.25em 0;
+}
+
+.feed-icon {
+  display: block;
+  margin: 25px 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main#content img {
+  border: 1px solid #785fa0;
+}
+
+main#content .align-left {
+  margin-right: 1em;
+}
+
+main#content .align-right {
+  margin-left: 1em;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+
+ul ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+
+ol {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+
+ol ol {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+.fluid-columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.fluid-columns > * {
+  flex: 0 1 220px;
+}
+
+.align-center {
+  text-align: center;
+}
+/*# sourceMappingURL=elements.css.map */
