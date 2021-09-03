@@ -42,7 +42,7 @@
 
 [dir="rtl"] .field--type-entity-reference ul.links li {
   float: right;
-  padding: 0 0 0 1em;
+  padding: 0 0 0 1rem;
 }
 
 [dir="rtl"] .field--name-field-tags .field__label {
@@ -52,27 +52,27 @@
 
 [dir="rtl"] .field--name-field-tags ul.links li {
   float: right;
-  padding: 0 0 0 1em;
+  padding: 0 0 0 1rem;
 }
 
 .node--view-mode-teaser .field--type-entity-reference .field__label {
-  font-size: 0.821em;
+  font-size: 0.821rem;
 }
 
 .node--view-mode-teaser .field--type-entity-reference .field__item {
-  font-size: 0.821em;
+  font-size: 0.821rem;
 }
 
 .node--view-mode-teaser .field--type-entity-reference ul.links {
-  font-size: 0.821em;
+  font-size: 0.821rem;
 }
 
 .node--view-mode-teaser .field--name-field-tags .field__label {
-  font-size: 0.821em;
+  font-size: 0.821rem;
 }
 
 .node--view-mode-teaser .field--name-field-tags ul.links {
-  font-size: 0.821em;
+  font-size: 0.821rem;
 }
 
 @media all and (min-width: 560px) {

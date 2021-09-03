@@ -7,6 +7,7 @@
 
 html {
   height: 100%;
+  @include fluid-type(320px, 1200px, 12px, 16px);
 }
 body {
   min-height: 100%;
@@ -16,21 +17,25 @@ body {
 }
 a {
   text-decoration: none;
+  border-bottom: 0;
 }
-.link {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
+a, .link {
   &:hover {
     text-decoration: none;
-    border-bottom-style: solid;
+    border-bottom: 0;
   }
   &:active {
     text-decoration: none;
-    border-bottom-style: solid;
+    border-bottom: 0;
   }
   &:focus {
     text-decoration: none;
-    border-bottom-style: solid;
+    border-bottom: 0;
   }
+}
+.link {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 h1, .heading-a {
   margin: 1em 0 0.5em;
