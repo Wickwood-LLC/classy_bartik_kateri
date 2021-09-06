@@ -2,9 +2,17 @@
  * @file
  * Visual styles for Bartik's main-content component.
  */
+ @import "../base/mixins";
+ @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
-.main-content .section {
-  padding: 0 15px;
+.main-content {
+  .section {
+    padding: 0 15px;
+  }
+
+  h2 {
+    @include fluid-type(320px, 980px, 18px, 24px);
+  }
 }
 
 @media all and (min-width: 851px) {
