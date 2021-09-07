@@ -81,6 +81,7 @@ h5, .heading-e {
   clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
+  text-transform: none;
   font-size: 0.889em;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
@@ -90,6 +91,7 @@ h6, .heading-f {
   clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
+  text-transform: none;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
   @include fluid-type(320px, 1200px, 12px, 16px);
