@@ -43,7 +43,7 @@ h1, .heading-a {
   color: #000;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 24px, 32px);
+  @include fluid-type(320px, 980px, 30px, 36px);
 
   a {
     border-bottom: none;
@@ -55,7 +55,7 @@ h2, .heading-b {
   font-size: 1.143em;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 18px, 24px);
+  @include fluid-type(320px, 980px, 24px, 30px);
 
   a {
     border-bottom: none;
@@ -67,7 +67,7 @@ h3, .heading-c {
   font-size: 1.092em;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 16px, 18px);
+  @include fluid-type(320px, 980px, 20px, 24px);
 }
 h4, .heading-d {
   clear: both;
@@ -75,26 +75,24 @@ h4, .heading-d {
   font-size: 1.05em;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 14px, 16px);
+  @include fluid-type(320px, 980px, 18px, 22px);
 }
 h5, .heading-e {
   clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   font-size: 0.889em;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 14px, 16px);
+  @include fluid-type(320px, 980px, 14px, 18px);
 }
 h6, .heading-f {
   clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 1200px, 12px, 14px);
+  @include fluid-type(320px, 1200px, 12px, 16px);
 }
 p {
   margin: 0 0 1.2em;

@@ -61,18 +61,18 @@ h1, .heading-a {
 }
 
 h1, .heading-a {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 320px) {
   h1, .heading-a {
-    font-size: calc(24px + 8 * ((100vw - 320px) / 660));
+    font-size: calc(30px + 6 * ((100vw - 320px) / 660));
   }
 }
 
 @media screen and (min-width: 980px) {
   h1, .heading-a {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -88,18 +88,18 @@ h2, .heading-b {
 }
 
 h2, .heading-b {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 @media screen and (min-width: 320px) {
   h2, .heading-b {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 660));
+    font-size: calc(24px + 6 * ((100vw - 320px) / 660));
   }
 }
 
 @media screen and (min-width: 980px) {
   h2, .heading-b {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 
@@ -115,18 +115,18 @@ h3, .heading-c {
 }
 
 h3, .heading-c {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 320px) {
   h3, .heading-c {
-    font-size: calc(16px + 2 * ((100vw - 320px) / 660));
+    font-size: calc(20px + 4 * ((100vw - 320px) / 660));
   }
 }
 
 @media screen and (min-width: 980px) {
   h3, .heading-c {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
@@ -138,18 +138,18 @@ h4, .heading-d {
 }
 
 h4, .heading-d {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
   h4, .heading-d {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 660));
+    font-size: calc(18px + 4 * ((100vw - 320px) / 660));
   }
 }
 
 @media screen and (min-width: 980px) {
   h4, .heading-d {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
@@ -157,7 +157,6 @@ h5, .heading-e {
   clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   font-size: 0.889em;
   font-weight: bold;
 }
@@ -168,13 +167,13 @@ h5, .heading-e {
 
 @media screen and (min-width: 320px) {
   h5, .heading-e {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 660));
+    font-size: calc(14px + 4 * ((100vw - 320px) / 660));
   }
 }
 
 @media screen and (min-width: 980px) {
   h5, .heading-e {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -182,7 +181,6 @@ h6, .heading-f {
   clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -192,13 +190,13 @@ h6, .heading-f {
 
 @media screen and (min-width: 320px) {
   h6, .heading-f {
-    font-size: calc(12px + 2 * ((100vw - 320px) / 880));
+    font-size: calc(12px + 4 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
   h6, .heading-f {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
