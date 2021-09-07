@@ -2,10 +2,12 @@
  * @file
  * Visual styles for Bartik's page-title component.
  */
+ @import "../base/mixins";
+ @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 .page-title {
-  font-size: 2em;
   line-height: 1em;
   font-weight: bold;
   text-align: center;
+  @include fluid-type(320px, 980px, 30px, 36px);
 }

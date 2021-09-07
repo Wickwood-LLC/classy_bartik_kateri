@@ -124,4 +124,20 @@
 .field--name-user-picture img {
   margin: 0 0 1em;
 }
+
+.field--name-title {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .field--name-title {
+    font-size: calc(30px + 6 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .field--name-title {
+    font-size: 36px;
+  }
+}
 /*# sourceMappingURL=field.css.map */

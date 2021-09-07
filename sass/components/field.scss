@@ -2,6 +2,8 @@
  * @file
  * Visual styles for Bartik's field components.
  */
+ @import "../base/mixins";
+ @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 .field--type-entity-reference {
   margin: 0 0 1.2em;
@@ -116,4 +118,8 @@
 }
 .field--name-user-picture img {
   margin: 0 0 1em;
+}
+
+.field--name-title {
+  @include fluid-type(320px, 980px, 30px, 36px);
 }

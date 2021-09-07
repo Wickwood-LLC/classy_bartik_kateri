@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../sass/components/page-title.scss","page-title.css"],"names":[],"mappings":"AAAA;;;ECGE;ADEF;EACE,cAAc;EACd,gBAAgB;EAChB,iBAAiB;EACjB,kBAAkB;ACApB","file":"page-title.css"}
+{"version":3,"sources":["../../sass/components/page-title.scss","page-title.css","../../sass/base/_mixins.scss"],"names":[],"mappings":"AAAA;;;ECGE;ADIF;EACE,gBAAgB;EAChB,iBAAiB;EACjB,kBAAkB;ACFpB;;ADDA;EEKM,eFDkC;ACCxC;;ACCM;EFNN;IEOQ,mDAA+I;EDGrJ;AACF;;ACFM;EFTN;IEUQ,eFNsC;ECY5C;AACF","file":"page-title.css"}
